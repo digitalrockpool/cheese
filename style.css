@@ -1,0 +1,296 @@
+/*
+ Theme Name:   Cheese
+ Description:  Hello Child Theme
+ Author:       Digital Rockpool
+ Author URI:   https://digitalrockpool.com
+ Template:     hello-elementor
+ Version:      1.0.0
+ Text Domain:  hello-elementor
+*/
+
+/* # Table of Contents
+	- Woocommerce
+
+*/
+
+/* # General
+------------------------------------------------------ */
+/* ## Top Navigation
+-------------------------------------------- */
+#menu-item-my-account {
+  display: none;
+}
+
+.logged-in #menu-item-my-account {
+  display: inline-block;
+}
+
+.logged-in #menu-item-sign-in {
+  display: none;
+}
+
+/* ## Tables
+-------------------------------------------- */
+table td,
+table th {
+  background-color: #ffffff;
+  border: none;
+  border-bottom: 1px solid #cccccc;
+}
+
+
+/* # Woocommerce
+------------------------------------------------------ */
+.woocommerce button.woocommerce-button,
+.woocommerce button.button,
+.woocommerce a.button.alt,
+.woocommerce button.button.alt {
+  background-color: #000000;
+  border-radius: 3px;
+  color: #E3B51D;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.woocommerce button.woocommerce-button:active,
+.woocommerce button.woocommerce-button:hover,
+.woocommerce button.button:active,
+.woocommerce button.button:hover,
+.woocommerce a.button.alt:hover,
+.woocommerce button.button.alt:hover {
+  background-color: #000000;
+  color: #E3921D;
+}
+
+.woocommerce button.button:disabled, .woocommerce button.button:disabled[disabled] {
+  background-color: #BBBCBE;
+}
+
+/* ## Woocommerce - My Account
+-------------------------------------------- */
+.woo-my-account-nav {
+  display: none!important;
+}
+
+.logged-in .woo-my-account-nav {
+  display: flex!important;
+}
+
+.woo-my-account-content,
+.woocommerce-account .woocommerce-MyAccount-content {
+  width: 100%!important;
+}
+
+.logged-in .woo-my-account-content {
+  width: 66.666%;
+}
+
+.woocommerce .u-columns {
+  display: flex;
+  width: 100%;
+}
+
+.woocommerce .col-1,
+.woocommerce .col-2 {
+  padding: 30px;
+  width: 50%;
+}
+
+.woocommerce .woocommerce-MyAccount-content button {
+  display: block;
+  margin-top: 15px;
+}
+
+.woocommerce nav.woocommerce-MyAccount-navigation {
+  display: none;
+}
+
+.woocommerce address {
+  font-style: normal;
+}
+
+/* ## Woocommerce - Tables
+-------------------------------------------- */
+.woocommerce table tr,
+.woocommerce table th,
+.woocommerce table td,
+.woocommerce table thead:first-child tr:first-child th,
+.woocommerce table tbody>tr:nth-child(odd),
+.woocommerce table tbody>tr:nth-child(odd)>th,
+.woocommerce table tbody>tr:nth-child(odd)>td,
+.woocommerce table tbody>tr:nth-child(even),
+.woocommerce table tbody>tr:nth-child(even)>td,
+.woocommerce table tbody>tr:nth-child(even)>th,
+.woocommerce table tbody>tr:nth-child(odd):hover,
+.woocommerce table tbody>tr:nth-child(odd)>th:hover,
+.woocommerce table tbody>tr:nth-child(odd)>td:hover,
+.woocommerce table tbody>tr:nth-child(even):hover,
+.woocommerce table tbody>tr:nth-child(even)>td:hover,
+.woocommerce table tbody>tr:nth-child(even)>th:hover  {
+  background-color: #ffffff;
+  border: none;
+  text-align: left;
+  vertical-align: top;
+}
+
+.woocommerce table th,
+.woocommerce table td,
+.woocommerce table th:hover,
+.woocommerce table td:hover {
+  border-top: 1px solid #ebe9eb!important;
+}
+
+.woocommerce table tr:first-child th,
+.woocommerce table tr.cart-subtotal td,
+.woocommerce table.lpp-shipping-package-wrapper td {
+  border-top: none!important;
+}
+
+.woocommerce table.shop_table tbody th,
+.woocommerce table.shop_table tfoot td {
+  font-weight: 600;
+}
+
+
+/* ## Woocommerce - Basket
+-------------------------------------------- */
+.woocommerce td.product-remove a.remove {
+  border: 2px solid #BBBCBE;
+  border-radius: 100%;
+  color: #BBBCBE!important;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 0.8;
+}
+
+.woocommerce td.product-remove a.remove:hover {
+  background-color: #BBBCBE;
+  color: #ffffff!important;
+}
+
+.woocommerce th.product-thumbnail,
+.woocommerce td.product-thumbnail {
+  display: none;
+}
+
+.woocommerce .woocommerce-cart-form__contents button.button {
+  float: right;
+}
+.woocommerce .pickup-location-field.pickup-location-cart-item-field {
+  max-width: none;
+}
+
+/* ## Woocommerce - Checkout
+-------------------------------------------- */
+.woocommerce .pickup-location-field .pickup-location-address {
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0 0 8px 0;
+}
+
+.woocommerce small.pickup-location-field-label,
+.woocommerce table.shop_table td small {
+  font-size: 12px;
+}
+
+.woocommerce .pickup-location-field button.ui-datepicker-trigger {
+  margin: 13px 0 0 -42px;
+}
+
+.woocommerce .pickup-location-field button.ui-datepicker-trigger:hover {
+  background: transparent;
+}
+
+/* ## Woocommerce - Quantity
+-------------------------------------------- */
+/* Remove arrows in number inputs - Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Remove arrows in number inputs - Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.woocommerce div.product form.cart div.quantity {
+  margin: 0;
+}
+
+.woocommerce div.product form.cart div.quantity .qty {
+  border: 1px solid #000000;
+  border-radius: 0;
+  min-width: 75px;
+}
+
+.woocommerce .cart button.woo-quanitiy-minus,
+.woocommerce .cart button.woo-quanitiy-minus:hover  {
+  border-radius: 3px 0 0 3px!important;
+  padding: 0 8px;
+}
+
+.woocommerce .cart button.woo-quanitiy-plus,
+.woocommerce .cart button.woo-quanitiy-plus:hover  {
+  border-radius: 0 3px 3px 0!important;
+  padding: 0 8px;
+  margin-right: 8px;
+}
+
+/* ## Woocommerce - Sidebar Filters
+-------------------------------------------- */
+.woocommerce ul.product-categories {
+  padding-left: 0;
+}
+
+.woocommerce ul.product-categories ul.children {
+  padding-left: 20px;
+}
+
+.woocommerce ul.product-categories li {
+  font-size: 14px;
+  list-style: none;
+}
+
+.woocommerce ul.product-categories li a {
+  color: #000000;
+}
+
+.woocommerce ul.product-categories li a:hover {
+  color: #E3921D;
+}
+
+/* ## Woocommerce - Product Page
+-------------------------------------------- */
+.weight-statement-hide {
+  display: none;
+}
+
+.woocommerce ul.product-categories li.cat-item-16 {
+  display: none;
+}
+
+.woocommerce table.shop_attributes th {
+  width: 170px!important;
+}
+
+/* ## Elementor - Flipbox
+--------------------------------------------  */
+.woocommerce .pending-content-1 .elementor-flip-box__button {
+  display: none;
+}
+
+/* # Elementor Fixes
+------------------------------------------------------ */
+.elementor-flip-box__front {
+  background-position: center;
+  background-size: cover;
+}
+
+.woocommerce input.search-field {
+  padding: .4rem 1rem;
+  width: 65%;
+}
